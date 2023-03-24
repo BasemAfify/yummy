@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Game Over" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy Yummy</title>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="d-flex position-fixed top-0 bottom-0 zindex">
+      <div class="bg-black links-slide top-0 bottom-0 position-fixed">
+        <div
+          class="container d-flex flex-column align-items-center justify-content-between h-100"
+        >
+          <div class="d-flex flex-column">
+            <a id="Search" class="py-1" href="#">Search</a>
+            <a id="Categories" class="py-1" href="#">Categories</a>
+            <a id="Area" class="py-1" href="#">Area</a>
+            <a id="Ingredients" class="py-1" href="#">Ingredients</a>
+            <a id="Contact-Us" class="py-1" href="#">Contact Us</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-globe pointer"></i>
+            <i class="fa-brands fa-facebook pointer"></i>
+            <i class="fa-brands fa-twitter pointer"></i>
+            <p>
+              Copyright Â© 2019 All Rights <br />
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sideBar position-fixed py-3 bg-white top-0 bottom-0 d-flex flex-column justify-content-between align-items-center"
+      >
+        <img src="images/logo.png" class="w-75" alt="" />
+        <div>
+          <i id="bars" class="fa-solid fa-bars text-black fs-2 pointer"></i>
+          <i
+            id="close"
+            class="fa-solid fa-x fs-2 text-black d-none pointer"
+          ></i>
+        </div>
+        <div class="text-black d-flex flex-column">
+          <i class="fa-solid fa-globe pointer"></i>
+          <i class="fa-solid fa-share-nodes pointer"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------search form ----------------------------------->
+    <div id="Searchform" class="d-flex justify-content-evenly  my-5  d-none">
+      <input id="search-by-name" placeholder="Search By Name" type="text" class="text-white form-control bg-transparent w-25 ">
+      <input id="search-by-first-letter" placeholder="Search By First Letter" type="text" class="text-white form-control bg-transparent w-25 ">
+    </div>
+
+
+
+    <!-- --------------------------------------------------------------------- -->
+    <div class="container ">
+      <div class="row temp ">
+        <!-- <div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 position-relative p-0 layerhover"
+          >
+            <img src="images/logo.png" class="w-100 rounded-3" alt="" />
+            <div
+              class="layer position-absolute rounded-3 d-flex align-items-center justify-content-start"
+            >
+              <p class="text-black fs-2"></p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <!------------------------------ Mail details ----------------------------------->
+
+    <div id="mealdetails" class="container top-0 start-0 bottom-0 end-0 d-none">
+      <div  class="row mt-5 mb-5">
+        <div class="col-md-4">
+          <img id="mealimage" class="w-100" src="" alt="" />
+          <span id="mealname" class="fs-3"></span>
+        </div>
+        <div class="col-md-8 ps-2">
+          <h4 class="fs-2">Instructions</h4>
+          <p id="Instructions" class="fs-6"></p>
+          <p class="fs-1">Area :<span id="mealarea"></span></p>
+          <p class="fs-1">Category :<span id="maleCategory"></span></p>
+          <p class="fs-1 d-flex flex-wrap">Recipes : <br /></p>
+          <ul class="list-unstyled d-flex g-3 flex-wrap recepies">
+            <li class="alert alert-info m-2 p-1"><span class="ingredients"></span><span class="mesure"></span></li>
+          </ul>
+          <p class="fs-1 ">Tags : <br /></p>
+          <ul class="list-unstyled d-flex g-3 flex-wrap tags">
+            <li class="alert alert-danger m-2 p-1"></li>
+          </ul>
+          <a href="" target="_blank" id="mealsource" class="btn btn-success">source</a>
+          <a href="" target="_blank" id="mealyoutube" class="btn btn-danger"
+            >youtube</a
+          >
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class=" m-auto  col-lg-4 col-md-6 position-relative  ">
+      <i class="fa-solid fa-house-laptop fa-4x "></i>
+      <p class="fs-3">american</p>
+    </div> -->
+
+
+
+    <!-- <div class=" m-auto  col-lg-4 col-md-6 position-relative  ">
+      <i class="fa-solid fa-meat"></i>
+      <span class="fs-3"></span>
+      <p class="text-center"></p>
+    </div> -->
+    <!-- <i class="fa-solid fa-drumstick-bite"></i> -->
+    
+    <div class="container ">
+      <div class="row m-5 justify-content-evenly align-items-center gy-5">
+        <!-- <div class="col-md-6">
+        <input placeholder="Enter Your Name" class="form-control " type="text">
+
+        </div>
+        <div class="col-md-6">
+        <input placeholder="Enter You Email" class="form-control " type="email">
+
+        </div>
+        <div class="col-md-6">
+        <input placeholder="Enter You Phone" class="form-control " type="tel">
+
+        </div>
+        <div class="col-md-6">
+        <input placeholder="Enter You Age" class="form-control " type="number">
+
+        </div>
+        <div class="col-md-6">
+        <input placeholder="Enter You Password" class="form-control " type="password">
+
+        </div>
+        <div class="col-md-6">
+        <input placeholder="Repassword" class="form-control " type="password">
+
+        </div>
+        
+        <button class="btn btn-outline-danger m-auto text-center mt-5 w-25 disabled">Submit</button> -->
+      </div>
+    </div>
+
+
+    <!-- <section id="contact" class="d-none">
+    <div class="container px-1 px-lg-5">
+      <h2 class="fs-1 text-center mb-5">Contact Us</h2>
+      <form>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-6 position-relative">
+            <i class="fa fa-check bg-green"></i>
+            <i class="fa fa-close bg-red"></i>
+            <input class="w-100" type="text" name="name" placeholder="Enter Your Name" required>
+            <div class="validation-card  ">"Your name should have at least 3 characters."</div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <i class="fa fa-check bg-green"></i>
+            <i class="fa fa-close bg-red"></i>
+            <input class="w-100" type="email" name="email" placeholder="Enter Your Email" required>
+            <div class="validation-card ">"You should enter a valid email."</div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <i class="fa fa-check bg-green"></i>
+            <i class="fa fa-close bg-red"></i>
+            <input class="w-100" type="tel" name="phone" placeholder="Enter Your Phone" required>
+            <div class="validation-card ">"You should enter a valid number ex:0104 5678 910."</div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <i class="fa fa-check bg-green"></i>
+            <i class="fa fa-close bg-red"></i>
+            <input class="w-100" type="number" name="age" placeholder="Enter Your Age" required>
+            <div class="validation-card ">"You should enter a valid age."</div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <i class="fa fa-check bg-green"></i>
+            <i class="fa fa-close bg-red"></i>
+            <input class="w-100" type="password" name="password" placeholder="Enter Your Password" required>
+            <div class="validation-card ">"Your name should have at least 8 characters, 1 UPPERCASE, 1 lowercase, 1 number, 1 $peci@l ch@r@cter."</div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <i class="fa fa-check bg-green"></i>
+            <i class="fa fa-close bg-red"></i>
+            <input class="w-100" type="password" name="repassword" placeholder="Re-enter Your Password" required>
+            <div class="validation-card ">"You should have matched passwords."</div>
+          </div>
+          <button class="btn btn-outline-warning mt-5" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section> -->
+    
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
